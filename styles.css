@@ -1,11 +1,17 @@
+/* Custom styles for additional customization */
 body {
-    font-family: Arial, sans-serif;
-    text-align: center;
-    margin: 0;
-    padding: 0;
+    background-color: #f4f4f4;
 }
-header {
-    background-color: #ff9800;
-    color: white;
-    padding: 20px;
+
+li {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+li:hover {
+    transform: scale(1.03);
+    box-shadow: 0 10px 15px rgba(0,0,0,0.1);
+}
+
+a {
+    transition: color 0.3s ease;
 }
