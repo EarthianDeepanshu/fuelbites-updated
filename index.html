@@ -3,39 +3,134 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quick Bites - QSR</title>
+    <title>Fusion Flavors - Indo-Chinese & Mexican QSR</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-    <header>
-        <nav>
-            <div class="logo">Quick Bites</div>
-            <ul>
-                <li><a href="#menu">Menu</a></li>
-                <li><a href="#deals">Deals</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    <section id="hero">
-        <h1>Delicious Food, Quick Service</h1>
-        <p>Order now and enjoy amazing flavors!</p>
-        <a href="#menu" class="btn">View Menu</a>
-    </section>
-    <section id="menu">
-        <h2>Our Menu</h2>
-        <div class="menu-items">
-            <div class="item">Burger - $5.99</div>
-            <div class="item">Pizza - $7.99</div>
-            <div class="item">Fries - $2.99</div>
+<body class="bg-gray-100 font-sans">
+    <header class="bg-red-600 text-white py-4 shadow-md">
+        <div class="container mx-auto px-4 flex justify-between items-center">
+            <h1 class="text-3xl font-bold">Fusion Flavors</h1>
+            <nav>
+                <ul class="flex space-x-4">
+                    <li><a href="#indo-chinese" class="hover:text-yellow-300">Indo-Chinese</a></li>
+                    <li><a href="#mexican" class="hover:text-yellow-300">Mexican</a></li>
+                    <li><a href="#beverages" class="hover:text-yellow-300">Beverages</a></li>
+                </ul>
+            </nav>
         </div>
-    </section>
-    <section id="deals">
-        <h2>Special Deals</h2>
-        <p>Get 20% off your first order!</p>
-    </section>
-    <footer>
-        <p>Contact us: (123) 456-7890 | Visit us: 123 Food St, City</p>
+    </header>
+
+    <main class="container mx-auto px-4 py-8">
+        <section id="indo-chinese" class="mb-12">
+            <h2 class="text-4xl font-bold mb-6 text-red-600">🥡 Indo-Chinese Menu</h2>
+            
+            <div class="grid md:grid-cols-2 gap-8">
+                <div>
+                    <h3 class="text-2xl font-semibold mb-4">Starters</h3>
+                    <ul class="space-y-2">
+                        <li class="bg-white p-3 rounded shadow">Veg Manchurian (Dry/Gravy)</li>
+                        <li class="bg-white p-3 rounded shadow">Chicken Lollipop</li>
+                        <li class="bg-white p-3 rounded shadow">Spring Rolls (Veg/Chicken)</li>
+                        <li class="bg-white p-3 rounded shadow">Chili Paneer (Dry/Gravy)</li>
+                        <li class="bg-white p-3 rounded shadow">Chili Chicken</li>
+                        <li class="bg-white p-3 rounded shadow">Schezwan Crispy Potatoes</li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-2xl font-semibold mb-4">Rice & Noodles</h3>
+                    <ul class="space-y-2">
+                        <li class="bg-white p-3 rounded shadow">Veg/Chicken Hakka Noodles</li>
+                        <li class="bg-white p-3 rounded shadow">Schezwan Noodles (Veg/Chicken)</li>
+                        <li class="bg-white p-3 rounded shadow">Egg Fried Rice</li>
+                        <li class="bg-white p-3 rounded shadow">Chicken Fried Rice</li>
+                        <li class="bg-white p-3 rounded shadow">Burnt Garlic Rice (Veg/Chicken)</li>
+                        <li class="bg-white p-3 rounded shadow">Triple Schezwan Rice</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="mt-8">
+                <h3 class="text-2xl font-semibold mb-4">Main Course</h3>
+                <ul class="grid md:grid-cols-3 gap-4">
+                    <li class="bg-white p-3 rounded shadow">Paneer/Chicken Hot Garlic</li>
+                    <li class="bg-white p-3 rounded shadow">Veg/Chicken Manchurian Gravy</li>
+                    <li class="bg-white p-3 rounded shadow">Mixed Veg in Schezwan Sauce</li>
+                    <li class="bg-white p-3 rounded shadow">Chili Garlic Chicken</li>
+                </ul>
+            </div>
+            
+            <div class="mt-8">
+                <h3 class="text-2xl font-semibold mb-4">Dips & Extras</h3>
+                <ul class="grid md:grid-cols-2 gap-4">
+                    <li class="bg-white p-3 rounded shadow">Schezwan Sauce</li>
+                    <li class="bg-white p-3 rounded shadow">Extra Chili Garlic Dip</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="mexican" class="mb-12">
+            <h2 class="text-4xl font-bold mb-6 text-red-600">🌮 Mexican Menu</h2>
+            
+            <div class="grid md:grid-cols-2 gap-8">
+                <div>
+                    <h3 class="text-2xl font-semibold mb-4">Starters & Sides</h3>
+                    <ul class="space-y-2">
+                        <li class="bg-white p-3 rounded shadow">Nachos with Cheese & Salsa</li>
+                        <li class="bg-white p-3 rounded shadow">Jalapeño Poppers</li>
+                        <li class="bg-white p-3 rounded shadow">Mexican Loaded Fries</li>
+                        <li class="bg-white p-3 rounded shadow">Chicken Quesadilla</li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-2xl font-semibold mb-4">Tacos & Burritos</h3>
+                    <ul class="space-y-2">
+                        <li class="bg-white p-3 rounded shadow">Classic Veg Taco</li>
+                        <li class="bg-white p-3 rounded shadow">Spicy Chicken Taco</li>
+                        <li class="bg-white p-3 rounded shadow">Bean & Cheese Burrito</li>
+                        <li class="bg-white p-3 rounded shadow">Chicken & Rice Burrito</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="mt-8">
+                <h3 class="text-2xl font-semibold mb-4">Mains & Rice Bowls</h3>
+                <ul class="grid md:grid-cols-3 gap-4">
+                    <li class="bg-white p-3 rounded shadow">Mexican Rice Bowl (Veg/Chicken)</li>
+                    <li class="bg-white p-3 rounded shadow">Chipotle Grilled Paneer Wrap</li>
+                    <li class="bg-white p-3 rounded shadow">Spicy Chicken Fajita Wrap</li>
+                </ul>
+            </div>
+            
+            <div class="mt-8">
+                <h3 class="text-2xl font-semibold mb-4">Dips & Extras</h3>
+                <ul class="grid md:grid-cols-3 gap-4">
+                    <li class="bg-white p-3 rounded shadow">Guacamole</li>
+                    <li class="bg-white p-3 rounded shadow">Extra Cheese Sauce</li>
+                    <li class="bg-white p-3 rounded shadow">Salsa Fresca</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="beverages" class="mb-12">
+            <h2 class="text-4xl font-bold mb-6 text-red-600">🥤 Beverages</h2>
+            <ul class="grid md:grid-cols-3 gap-4">
+                <li class="bg-white p-3 rounded shadow">Classic Lemon Iced Tea</li>
+                <li class="bg-white p-3 rounded shadow">Virgin Mojito</li>
+                <li class="bg-white p-3 rounded shadow">Cold Coffee</li>
+                <li class="bg-white p-3 rounded shadow">Soft Drinks</li>
+                <li class="bg-white p-3 rounded shadow">Bottled Water</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer class="bg-red-600 text-white py-6">
+        <div class="container mx-auto px-4 text-center">
+            <p>&copy; 2024 Fusion Flavors. All Rights Reserved.</p>
+            <p class="mt-2">Contact: +91 XXXXXXXXXX | info@fusionflavors.com</p>
+        </div>
     </footer>
 </body>
 </html>
